@@ -102,12 +102,10 @@ endif
 let g:loaded_gist_vim = 1
 
 if (!exists('g:github_user') || !exists('g:github_token')) && !executable('git')
-  echoerr "Gist: require 'git' command"
   finish
 endif
 
 if !executable('curl')
-  echoerr "Gist: require 'curl' command"
   finish
 endif
 
